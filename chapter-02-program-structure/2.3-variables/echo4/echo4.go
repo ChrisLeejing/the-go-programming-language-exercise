@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
-	$END$
+	s := "世界"
+	fmt.Println(s[2])
 }
