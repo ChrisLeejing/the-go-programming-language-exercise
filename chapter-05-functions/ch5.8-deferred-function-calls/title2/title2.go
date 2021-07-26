@@ -4,18 +4,17 @@ import (
 	"fmt"
 	"golang.org/x/net/html"
 	"net/http"
-	"os"
 	"strings"
 )
 
 // 使用defer优化./title1/title1.go
 func main() {
-	for _, url := range os.Args[1:] {
-		if err := title(url); err != nil {
-			fmt.Fprintf(os.Stderr, "title: %v\n", err)
-		}
-	}
-	// title("http://gopl.io")
+	// for _, url := range os.Args[1:] {
+	// 	if err := title(url); err != nil {
+	// 		fmt.Fprintf(os.Stderr, "title: %v\n", err)
+	// 	}
+	// }
+	title("http://gopl.io")
 }
 
 func title(url string) error {

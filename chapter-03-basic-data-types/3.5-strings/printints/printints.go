@@ -6,9 +6,9 @@ import (
 	"time"
 )
 
-// time mine:  506300  Nanoseconds.
+// time coirlee:  506300  Nanoseconds.
 // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-// time author:  0  Nanoseconds.
+// time Alan or Brian:  0  Nanoseconds.
 // [11, 22, 33, 44, 55, 66, 77, 88, 99]
 func main() {
 	result1 := intsToString([]int{11, 22, 33, 44, 55, 66, 77, 88, 99})
@@ -36,7 +36,7 @@ func intsToString(values []int) string {
 	end := "]"
 	s := begin + buf.String() + end
 	t2 := time.Now().Nanosecond()
-	fmt.Println("time mine: ", t2-t1, " Nanoseconds.")
+	fmt.Println("time coirlee: ", t2-t1, " Nanoseconds.")
 	return s
 }
 
@@ -57,7 +57,7 @@ func intsToString2(values []int) string {
 
 	buf.WriteByte(']')
 	t2 := time.Now().Nanosecond()
-	fmt.Println("time author: ", t2-t1, " Nanoseconds.")
+	fmt.Println("time Alan or Brian: ", t2-t1, " Nanoseconds.")
 
 	return buf.String()
 }
